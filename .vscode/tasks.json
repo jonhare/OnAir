@@ -1,0 +1,21 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "xtensa-lx106-elf-gcc build active file",
+            "command": "/Users/jsh2/.platformio/packages/toolchain-xtensa/bin/xtensa-lx106-elf-gcc",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "-mlongcalls",
+                "-mtext-section-literals"
+            ],
+            "options": {
+                "cwd": "/Users/jsh2/.platformio/packages/toolchain-xtensa/bin"
+            }
+        }
+    ],
+    "version": "2.0.0"
+}
